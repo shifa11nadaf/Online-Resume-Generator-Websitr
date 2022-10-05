@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Online-resume generator</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">  -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Theme-3.css"  id="theme">    
+</head>
+<body>
+
+
+    
+   <div class="container" id="cv-form">
+    <h1 class="fs-1" style="color: #BDEA22 ; font-family: Georgia, 'Times New Roman', Times, serif;">Online-resume generator.</h1>
+    
+    <!-- Grid 12 -->
+    <div class="row">
+
+        
+        <div class="col-md-6">
+        <!-- 6 grid  column1 -->
+
+        <h3 style="color: white;">Personal Information</h3>
+
+
+        <!-- photo -->
+        <div class="form-group py-2 ">
+
+        <label for="photocv">Select your photo</label>   
+        <input type="file" class="form-control" id="photocvfield" style="padding-bottom: 1rem; padding-top: 2px" required>
+        
+        </div>
+
+
+        <div class="contaniner py-2">
+
+         <h5 style="color: #BDEA22;">Choose Theme</h5>   
+        <button class="btn btn-outline-secondary" style="background-color: rgba(140, 140, 140, 0.546); color: black;" type="submit" style="margin-right: 6px;"onclick="changeCSS('./css/Theme-1.css');">Grey</button>
+        <button class="btn btn-outline-secondary" style="background-color: rgba(0, 255, 255, 0.575);color: black" type="submit" onclick="changeCSS('./css/Theme-2.css');" >Cyan</button>
+        <button class="btn btn-outline-secondary" style="background-color: rgba(9, 248, 9, 0.486);color: black"type="submit" onclick="changeCSS('./css/Theme-3.css');">Green</button>
+        <button class="btn btn-outline-secondary" style="background-color: rgba(250, 10, 250, 0.502);color: black"type="submit" onclick="changeCSS('./css/Theme-4.css');">purple</button>
+        <button class="btn btn-outline-secondary" style="background-color: rgba(251, 251, 10, 0.55);color: black"type="submit" onclick="changeCSS('./css/Theme-5.css');">yellow</button>
+        </div>
+        
+
+        <div class="form-group mt-2">
+            <label for="nameField">Your Name</label>
+            <input type="text" class="form-control" id="nameField" placeholder="Enter here">
+
+        </div>
+        <div class="form-group">
+            <label for="emailField">Your Email</label>
+            <input type="email" class="form-control" id="emailField" placeholder="Enter here">
+
+        </div>
+        <div class="form-group mt-2">
+            <label for="contactField">Contact No</label>
+            <input type="number" class="form-control" id="contactField" placeholder="Enter here">
+
+        </div>
+        <div class="form-group mt-2">
+            <label for="addressField">Your Address</label>
+            <textarea class="form-control mb-5" id="addressField" placeholder="Enter here"  ></textarea>
+
+        </div>
+
+
+        <h4 class="my-3" style="color: #BDEA22 ;">Social Links</h4>
+
+        <!-- github -->
+       
+        <div class="form-group">
+
+            <label for="gitField">Github</label>
+            <!--i class="bi bi-github" aria-hidden="true" style="color: white"--></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style="color: white;">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            <input type="text" class="form-control" id="gitField" placeholder="Enter here">
+
+        </div>
+
+        <!-- linkedin -->
+        <div class="form-group my-2">     
+                <label for="linkedinField">Linkedin </label>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" style="color: white;" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                <!--i class="fa fa-linkedin" aria-hidden="true" style="background: #007bb5 ;padding: 5px;"></i-->
+            <input type="text" class="form-control" id="linkedinField" placeholder="Enter here">
+
+        </div>
+
+        
+
+     <!-- Languages -->
+
+     <h4 class="my-3 py-2" style="color: #BDEA22 ;">Internships</h4>
+
+     <!-- L1 -->
+    
+     <div class="form-group">
+
+         <label for="NatLField">1</label>
+         <i class="fa fa-language" aria-hidden="true" style="color: white"></i>
+         <input type="text" class="form-control" id="NatLField"" placeholder="Enter here">
+
+     </div>
+
+     <!-- professional -->
+     <div class="form-group">
+
+         <label for="proLField">2</label>
+         <i class="fa fa-language" aria-hidden="true" style="color: #BDEA22 "></i>
+         <input type="text" class="form-control" style="padding-top: 10px;" id="proLField" placeholder="Enter here">
+
+     </div>    
+        
+<!-- professional -->
+     <div class="form-group">
+
+         <label for="proLField">3</label>
+         <i class="fa fa-language" aria-hidden="true" style="color: #BDEA22 "></i>
+         <input type="text" class="form-control" style="padding-top: 10px;" id="proLField" placeholder="Enter here">
+
+     </div>    
+        
+        
+    </div>
+        <!-- 6 grid column2 -->
+
+        <div class="col-md-6">
+            
+            <h3 style="color : White">Professional Information</h3>
+    
+            <!-- job tittle -->
+            <div class="form-group ">
+                <label for="jobtitleField">Job Title</label>
+                <input class="form-control" id="jobtitleField" placeholder="Enter here"  >
+    
+            </div>  
+
+            <!-- work exp -->
+            
+            <div class="form-group mt-2" id="workExp">
+                <label for="weField"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Work Experience</label>
+                <textarea class="form-control weField" placeholder="Role at company" rows="5" ></textarea>
+                <input class="form-control weFieldTIME mt-2"
+                maxlength="20 type="text"  placeholder="TimePeriod"  >
+    
+    
+            </div>  
+            
+            <button class="btn btn-outline-primary" id="weAdd-btn"> Add more </button>
+            <button class="btn btn-outline-danger" id="weRem-btn"> Remove </button>
+
+
+             <!-- Education -->
+            <div class="form-group mt-3" id="education">
+                <label for="EdField"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Education</label>
+                <textarea class="form-control EdField" placeholder="Enter here"  rows="5" ></textarea>
+    
+            </div>
+            <button class="btn btn-outline-primary" id="eduAddbtn"> Add more </button>
+            <button class="btn btn-outline-danger" id="eduRem-btn"> Remove </button>
+
+            
+            <!-- Projects -->
+            
+            <div class="form-group mt-2" id="projectUser">
+                <label for=" projectFieldTittle"><i class="fa fa-archive" aria-hidden="true"></i>&nbsp; Projects</label>
+                <input class="form-control projectFieldTittle"
+                 type="text" placeholder="Project tittle"  >
+                <!-- <textarea class="form-control projectFieldDesc  mt-2" placeholder="short description" rows="2" ></textarea> -->
+    
+    
+            </div>  
+            
+            <button class="btn btn-outline-primary" id="PAdd-btn"> Add more </button>
+            <button class="btn btn-outline-danger" id="PRRem-btn"> Remove </button>
+
+
+
+
+                <!-- Skills -->
+            
+                <div class="form-group mt-3" id="skilltUser">
+                    <label for=" skillFieldTittle"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        &nbsp; Skills</label>
+                    <input class="form-control skillFieldTittle"
+                     type="text" placeholder="Skill tittle"  >
+        
+                </div>  
+                
+                <button class="btn btn-outline-primary" id="skAdd-btn"> Add more </button>
+                <button class="btn btn-outline-danger" id="skRem-btn"> Remove </button>
+            
+
+            
+        <!-- Other interest -->
+
+        <h4 class="my-2 py-2" style="color: white;">Interests</h4>
+
+        <!-- 1-->
+
+         
+        <div class="form-group mt-2" id="interest">
+            <label for="interestField"></label>
+            <textarea class="form-control interestField" placeholder="Enter here" rows="1" ></textarea>
+
+        </div>
+        
+        <button class="btn btn-outline-primary" id="ITAdd-btn"> Add more </button>
+        <button class="btn btn-outline-danger" id="ITRem-btn"> Remove </button>
+
+        
+              
+            
+        </div>
+        
+        <div class="container text-center mt-3 my-4">
+            <btn-primary class="btn btn-success" onclick="GenerateCV()">Generate your CV</btn-primary>
+
+        </div>
+
+
+
+    </div>
+
+   </div>
+
+
+   <!-- Cv create Temp  -->
+
+
+   <div class="wrapper" id="cv-template">
+    <div class="sidebar-wrapper">
+        <div class="profile-container">
+            <img class="profile" src="/images/defaultAvatar.png" alt="Profile picture" id="imgT">
+            <h1 class="name" id="nameT">Dheeraj</h1>
+            <h3 class="tagline" id="JobNameT">Full Stak Developer</h3>
+        </div>
+        
+        <div class="contact-container container-block">
+            <ul class="list-unstyled contact-list">
+                <li class="email"><i class="fa fa-envelope" style="margin-right: 5px;"></i><a  id="emailT" href="mailto: Anyemail@email.com">raj@website.com</a></li>
+                <li class="phone"><i class="fa fa-phone" style="margin-right: 5px;"></i><a  id="mobileT" href="tel:0123 456 789">0123 456 789</a></li>
+                <li class="website"></li><i class="fa fa-globe" style="margin-right: 5px;"></i><a  id="portIdT"href="#" target="_blank">portfoliosite.com</a></li>
+                <li class="linkedin"></li><i class="fa fa-linkedin" style="margin-right: 2px;"></i><a  id="linkIdT"href="#" target="_blank">linkedin.com/in</a></li>
+                <li class="github" ><i class="fa fa-github"style="margin-right: 5px;"></i><a id="gitIdT" href="#" target="_blank">github.com/username</a></li>
+                <li class="home" ><i class="fa fa-home" style="margin-right: 5px;"></i><span id="addressT" href="#" target="_blank">@Address</span></li>
+            </ul>
+        </div>
+        <div class="education-container container-block">
+            <h2 class="container-block-title">Education</h2>
+            <div class="item" id="edT">
+                <h4 class="degree">Btech IT IT</h4>
+                <h5 class="meta">USICT</h5>
+                <div class="time">2019 - 2023</div>
+            </div>
+        
+        </div>
+      
+        
+      
+        
+    </div>
+    
+    <div class="main-wrapper">
+        
+        
+        <section class="section experiences-section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-briefcase"></i></span>Experiences</h2>
+            
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title" id="weT">Web Developer</h3>
+                        <div class="time" id="TworkPeriod">2019 - Present</div>
+                    </div>
+                </div>
+        
+            </div>
+
+    
+            
+        </section>
+        
+        <section class="section projects-section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-archive"></i></span>Projects</h2>
+
+            <div class="item-container" id="projSec">
+
+
+            </div>
+        
+            
+        </section>
+        
+        <section class="skills-section section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-rocket"></i></span>Skills &amp; Proficiency</h2>
+            <div class="" id="skillId">        
+                <div class="item">
+                    <h3 class="level-title ">Python &amp; Django</h3>
+                                      
+                </div>
+                
+            
+                
+            </div>  
+        </section>
+
+        
+        <div class="interests-container container-block">
+        
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-info-circle"></i></span>Interests</h2>
+            <ul class="list-unstyled interests-list " id="TInterest" style="padding-left: 18px; list-style: revert;">
+                <li>Climbing</li>
+                <li>Snowboarding</li>
+                <li>Photography</li>
+            </ul>
+        </div>
+
+          
+        <div class="languages-container container-block">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-language"></i></span>Languages</h2>
+            <ul class="list-unstyled interests-list" style="padding-left: 18px; list-style: revert;">
+                <li >(Native): <span id="nativeL"class="lang-desc"></span></li>
+                <li >(Professional): <span  id="proL"class="lang-desc"></span></li>
+            
+            </ul>
+        </div>
+
+        
+        <div class="container mt-4 text-center printbtn">
+            <button class="btn btn-success" onclick="PrintCV()">Print CV </button>
+            <button class="btn btn-success" onclick="EditBack()">Edit</button>
+        </div>  
+        
+    </div>
+    
+</div>
+
+
+<footer class="footer">
+    <div class="text-center">
+        
+        
+    </div><!--//container-->
+</footer><!--//footer-->
+
+
+</body>
+<script src="./js/themeChange.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+
+</html>
